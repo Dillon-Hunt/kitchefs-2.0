@@ -1,0 +1,31 @@
+.Ingredient {
+    width: 100%;
+    
+    padding: 20px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--color-dark-slight);
+}
+
+.Ingredient * {
+    font-weight: 200;
+}
+
+.Ingredient__name {
+    font-size: 1rem;
+    margin: 0;
+    
+    color: var(--color-dark-secondary);
+}
+
+
+.Ingredient__quantity {
+    font-size: 1rem;
+    margin: 0;
+
+    color: var(--color-dark-secondary);
+}
