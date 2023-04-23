@@ -1,0 +1,30 @@
+.Gallery {
+    padding: 10px 0 0 0;
+}
+
+.Gallery__title {
+    font-size: 1.25rem;
+
+    color: var(--color-dark-primary);
+}
+
+.Gallery__carousel {
+    width: 100vw;
+    margin: 0 0 0 -20px;
+    scroll-padding: 0 20px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Gallery__carousel__inner {
+    gap: 20px;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}

@@ -1,0 +1,25 @@
+.NotFound {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.NotFound * {
+    margin: 0;
+}
+
+.NotFound__Title {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--color-dark-primary);
+}
+
+.NotFound__Subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-dark-secondary);
+}

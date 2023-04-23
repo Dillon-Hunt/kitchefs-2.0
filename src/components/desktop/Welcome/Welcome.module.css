@@ -1,0 +1,35 @@
+.Welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Welcome__greeting {
+    padding: 20px 0;
+    gap: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Welcome__greeting * {
+    margin: 0;
+}
+
+.Welcome__greeting__title {
+    font-size: 2rem;
+    color: var(--color-highlight-primary);
+}
+
+.Welcome__greeting__subtitle {
+    font-size: 1rem;
+    color: var(--color-dark-detail);
+}
+
+.Welcome__profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    background-color: var(--color-highlight-primary);
+}
