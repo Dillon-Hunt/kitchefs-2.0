@@ -10,7 +10,7 @@
     
 
     color: var(--color-dark-secondary);
-    background-color: var(--color-dark-slight);
+    background-color: var(--color-light-slight);
 }
 
 .Servings__button {

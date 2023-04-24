@@ -1,6 +1,6 @@
 .Navigation {
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
     bottom: 0;
 
     position: fixed;
@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-around;
 
-    background-color: var(--color-light-secondary);
+    background-color: var(--color-light-slight);
 }
 
 .Navigation__item a {
@@ -17,4 +17,8 @@
     text-decoration: none;
 
     color: var(--color-dark-secondary);
+}
+
+.Navigation__item a svg {
+    padding: 10px;
 }

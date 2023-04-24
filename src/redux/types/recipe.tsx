@@ -7,6 +7,7 @@ export interface ingredient {
 export interface recipe {
     id: string,
     title: string,
+    description: string,
     image: string,
     tag: string,
     servings: number,

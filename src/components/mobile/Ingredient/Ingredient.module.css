@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    background-color: var(--color-dark-slight);
+    background-color: var(--color-light-slight);
 }
 
 .Ingredient * {

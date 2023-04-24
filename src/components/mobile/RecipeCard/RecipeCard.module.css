@@ -28,7 +28,7 @@
 
     backdrop-filter: blur(10px);
     color: var(--color-light-secondary);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .RecipeCard__image__overlay {

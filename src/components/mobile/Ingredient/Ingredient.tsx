@@ -74,7 +74,7 @@ function Ingredient(props: IngredientProps) {
     return (
         <div className={ styles.Ingredient }>
             <p className={ styles.Ingredient__name }>{ ingredient.name }</p>
-            <p className={ styles.Ingredient__quantity }>{ format_quantity(ingredient, adjustment) }{ ingredient.unit }</p>
+            <p className={ styles.Ingredient__quantity }>{ format_quantity(ingredient, adjustment) }{ ingredient.unit === '' ? `` : ` ${ ingredient.unit }` }</p>
         </div>
     )
 }
