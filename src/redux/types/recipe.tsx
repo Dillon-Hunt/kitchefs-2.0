@@ -9,6 +9,7 @@ export interface recipe {
     title: string,
     image: string,
     tag: string,
+    servings: number,
     ingredients: ingredient[],
     instructions: string[]
 }

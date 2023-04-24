@@ -1,6 +1,7 @@
 // Dependencies
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { Helmet } from 'react-helmet-async'
 
 // Types
 import { RootState } from '../../../redux/store'
@@ -19,6 +20,11 @@ function Recipes() {
 
     return (
         <>
+            <Helmet>
+                <title>{ recipe.title } - Kitchefs</title>
+                <meta name='description' content='Welcome to the home of Kitchefs, the ultimate recipe cookbook.' />
+            </Helmet>
+
             <RecipeHero recipe={ recipe } />
             <Recipe recipe={ recipe } />
         </>

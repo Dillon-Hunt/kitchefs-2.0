@@ -11,8 +11,6 @@ interface RecipeHeroProps {
 function RecipeHero(props: RecipeHeroProps) {
     const { recipe } = props
 
-    console.log(recipe.image)
-
     return (
         <div className={ styles.RecipeHero } style={{ backgroundImage: `url('${ recipe.image}')` }} />
     )

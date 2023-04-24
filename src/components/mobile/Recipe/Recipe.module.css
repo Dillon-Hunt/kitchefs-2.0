@@ -28,7 +28,14 @@
 .Recipe__section {
     font-size: 1.125rem;
 
-    color: var(--color-dark-secondary);
+    color: var(--color-highlight-secondary);
+}
+
+.Recipe__section__ingredients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Recipe__ingredients {
