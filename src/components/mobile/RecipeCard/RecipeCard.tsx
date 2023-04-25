@@ -14,7 +14,7 @@ function RecipeCard(props: RecipeCardProps) {
   const { recipe } = props
 
   return (
-    <Link className={ styles.RecipeCard } to={ `/recipes/${ recipe.id }` }>
+    <Link className={ styles.RecipeCard } to={ `/recipes/${ recipe.url }` }>
       <div className={ styles.RecipeCard__image} style={{ backgroundImage: `url('${ recipe.image }')` }} >
           <div className={ styles.RecipeCard__image__tag }>{ recipe.tag }</div>
           

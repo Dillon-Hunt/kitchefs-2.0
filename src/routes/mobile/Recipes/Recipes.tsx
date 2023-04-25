@@ -1,32 +1,55 @@
 // Dependencies
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { useSelector } from 'react-redux'
 import { Helmet } from 'react-helmet-async'
 
 // Types
-import { RootState } from '../../../redux/store'
+import { recipe } from '../../../redux/types/recipe'
 
 // Components
 import RecipeHero from '../../../components/mobile/RecipeHero'
 import Recipe from '../../../components/mobile/Recipe'
 
 // Styles
-// import styles from './Recipes.module.css'
+import styles from './Recipes.module.css'
 
 function Recipes() {
     const { id } = useParams()
-    const recipes = useSelector((state: RootState) => state.recipes.value)
-    const recipe = recipes.filter(recipe => recipe.id === id)[0]
+    const [recipe, setRecipe] = useState<recipe | null>(null)
+
+    useEffect(() => {
+        const BASE_URL = process.env.REACT_APP_BASE_URL
+
+        fetch(`http://${BASE_URL}/recipes/${id}`)
+            .then(response => response.json())
+            .then(data => data.error === null && setRecipe(data.response))
+    }, [id, setRecipe])
 
     return (
         <>
-            <Helmet>
-                <title>{ recipe.title } - Kitchefs</title>
-                <meta name='description' content='Welcome to the home of Kitchefs, the ultimate recipe cookbook.' />
-            </Helmet>
 
-            <RecipeHero recipe={ recipe } />
-            <Recipe recipe={ recipe } />
+            {
+                recipe !== null ?
+                <>
+                    <Helmet>
+                        <title>{ recipe.title } - Kitchefs</title>
+                        <meta name='description' content='Welcome to the home of Kitchefs, the ultimate recipe cookbook.' />
+                    </Helmet>
+
+                    <RecipeHero recipe={ recipe } />
+                    <Recipe recipe={ recipe } />
+                </> : <div className={ styles.container }>
+                    <div className={ styles.RecipeHero__placeholder } />
+                    <div className={ styles.Recipe__placeholder }>
+                        <div className={ styles.Recipe__placeholder__description } />
+                        <div className={ styles.Recipe__placeholder__section } />
+                        <div className={ styles.Recipe__placeholder__ingredient } />
+                        <div className={ styles.Recipe__placeholder__ingredient } />
+                        <div className={ styles.Recipe__placeholder__ingredient } />
+                        <div className={ styles.Recipe__placeholder__ingredient } />
+                    </div>
+                </div>
+            }
         </>
     )
 }

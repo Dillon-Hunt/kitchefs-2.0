@@ -3,8 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 
-// Components
-
 // Routes
 import DesktopHome from './routes/desktop/Home'
 import DesktopSearch from './routes/desktop/Search'
@@ -23,14 +21,12 @@ import MobileLayout from './other/mobile/Layout'
 import styles from './App.module.css'
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 620;
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 620
 
   useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
-
-  // TODO: Replace Component__ with container_ in css
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
 
   return (
     <div className={ styles.container }>

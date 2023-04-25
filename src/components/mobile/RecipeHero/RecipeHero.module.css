@@ -8,7 +8,7 @@
     background-position: center;
     position: relative;
 
-    background-color: var(--color-highlight-primary);
+    background-color: var(--color-light-slight);
 }
 
 .RecipeHero::before {

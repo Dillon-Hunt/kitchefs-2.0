@@ -1,5 +1,7 @@
-// Components
+// Dependencies
 import { useSelector } from 'react-redux'
+
+// Components
 import RecipeCard from '../RecipeCard'
 
 // Style
@@ -13,19 +15,27 @@ interface GalleryProps {
   tag: string
 }
 
-
 function Gallery(props: GalleryProps) {
+  const { title, tag } = props
   const recipes = useSelector((state: RootState) => state.recipes.value)
 
   return (
     <div className={ styles.Gallery }>
-      <h1 className={ styles.Gallery__title }>{props.title}</h1>
+      <h1 className={ styles.Gallery__title }>{ title }</h1>
       <div className={ styles.Gallery__carousel }>
         <div className={ styles.Gallery__carousel__inner }>
           {
-            recipes.filter(recipe => recipe.tag === props.tag).map(recipe => {
-              return <RecipeCard recipe={ recipe } />
+            recipes.length !== 0 
+            ? 
+            recipes.filter(recipe => recipe.tag === tag).map((recipe, id) => {
+              return <RecipeCard key={ id } recipe={ recipe } />
             })
+            :
+            <>
+              <div className={ styles.RecipeCard__placeholder } />
+              <div className={ styles.RecipeCard__placeholder } />
+              <div className={ styles.RecipeCard__placeholder } />
+            </>
           }
         </div>
       </div>

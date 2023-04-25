@@ -26,7 +26,7 @@ function Recipe(props: RecipeProps) {
         <div className={ styles.Recipe }>
             <div className={ styles.Recipe__description }>
                 <p className={ styles.Recipe__description__content }>{ recipe.description }</p>
-                <h3>- <Link to={ '../users/Dillon_Hunt' } className={ styles.Recipe__user }>Dillon Hunt</Link></h3>
+                <h3>- <Link to={ '/users/Dillon_Hunt' } className={ styles.Recipe__user }>Dillon Hunt</Link></h3>
             </div>
 
             <div className={ styles.Recipe__spacer } />

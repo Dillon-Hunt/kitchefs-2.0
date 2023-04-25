@@ -5,7 +5,8 @@ export interface ingredient {
 }
 
 export interface recipe {
-    id: string,
+    _id: string,
+    url: string,
     title: string,
     description: string,
     image: string,
