@@ -27,7 +27,7 @@ function Gallery(props: GalleryProps) {
           {
             recipes.length !== 0 
             ? 
-            recipes.filter(recipe => recipe.tag === tag).map((recipe, id) => {
+            recipes.filter(recipe => recipe.tags.includes(tag)).map((recipe, id) => {
               return <RecipeCard key={ id } recipe={ recipe } />
             })
             :

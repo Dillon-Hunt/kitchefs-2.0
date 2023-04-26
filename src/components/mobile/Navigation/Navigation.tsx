@@ -10,7 +10,7 @@ function Navigation() {
   return (
     <nav className={ styles.Navigation }>
       <div className={ styles.Navigation__item }>
-        <Link to='/'><FontAwesomeIcon icon={ icon({ name: 'add' }) } /></Link>
+        <Link to='/submit'><FontAwesomeIcon icon={ icon({ name: 'add' }) } /></Link>
       </div>
       <div className={ styles.Navigation__item }>
         <Link to='/'><FontAwesomeIcon icon={ icon({ name: 'home' }) } /></Link>

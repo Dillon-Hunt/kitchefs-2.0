@@ -9,6 +9,6 @@
     padding: 20px;
     border-radius: 10px;
 
-    background-color: var(--color-light-secondary);
-    color: var(--color-dark-secondary);
+    background-color: var(--color-neutral-600);
+    color: var(--color-neutral-500);
 }

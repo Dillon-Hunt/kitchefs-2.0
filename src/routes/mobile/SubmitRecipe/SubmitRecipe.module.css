@@ -1,0 +1,115 @@
+.SubmitRecipe {
+    padding: 20px 20px calc(60px + 1rem) 20px;
+}
+
+.SubmitRecipe__title__container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SubmitRecipe__title {
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--color-highlight-700);
+}
+
+.SubmitRecipe__button__import {
+    padding: 10px;
+    border-radius: 5px;
+
+    border: none;
+    cursor: pointer;
+    color: var(--color-neutral-900);
+    background-color: var(--color-highlight-700);
+}
+
+.SubmitRecipe__button__import:hover {
+    color: var(--color-neutral-200);
+    background-color: var(--color-neutral-600);
+}
+
+.SubmitRecipe__section {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 25px 0 10px 0;
+
+    color: var(--color-neutral-200);
+}
+
+.SubmitRecipe__input {
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.SubmitRecipe__input__ingredient {
+    gap: 10px;
+    grid-template-columns: 3fr 1fr;
+
+    display: grid;
+}
+
+.SubmitRecipe__input__ingredient__name, 
+.SubmitRecipe__input__ingredient__quantity, 
+.SubmitRecipe__input__method__content {
+    min-width: 100px;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    border: none;
+
+    background-color: var(--color-neutral-800);
+}
+
+.SubmitRecipe__input__method {
+    gap: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.SubmitRecipe__input__insert {
+    width: 100%;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    border: none;
+    cursor: pointer;
+
+    color: var(--color-neutral-200);
+    background-color: var(--color-neutral-800);
+}
+
+.SubmitRecipe__input__insert:hover {
+    background-color: var(--color-neutral-600);
+}
+
+.spacer {
+    height: 20px;
+}
+
+.SubmitRecipe__button__submit {
+    width: 100%;
+
+    padding: 20px;
+    border-radius: 5px;
+
+    border: none;
+    cursor: pointer;
+
+    color: var(--color-neutral-900);
+    background-color: var(--color-highlight-700);
+}
+
+.SubmitRecipe__button__submit:hover {
+    color: var(--color-neutral-200);
+    background-color: var(--color-neutral-600);
+}

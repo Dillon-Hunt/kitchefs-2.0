@@ -29,7 +29,7 @@ function Recipe(props: RecipeProps) {
                 <h3>- <Link to={ '/users/Dillon_Hunt' } className={ styles.Recipe__user }>Dillon Hunt</Link></h3>
             </div>
 
-            <div className={ styles.Recipe__spacer } />
+            <div className={ styles.spacer } />
 
             <div className={ styles.Recipe__section__ingredients}>
                 <h2 className={ styles.Recipe__section }>Ingredients</h2>
@@ -43,7 +43,7 @@ function Recipe(props: RecipeProps) {
                 }
             </div>
 
-            <div className={ styles.Recipe__spacer } />
+            <div className={ styles.spacer } />
 
             <h2 className={ styles.Recipe__section }>Instructions</h2>
             <div className={ styles.Recipe__instructions }>

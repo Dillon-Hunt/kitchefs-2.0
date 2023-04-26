@@ -33,6 +33,7 @@ function Home() {
       <Welcome />
       <SearchBar />
       <Gallery title={ 'Best Chocolate Recipes' } tag={ 'Chocolate' } />
+      <Gallery title={ 'Tasty Baking Recipes' } tag={ 'Baking' } />
       <Gallery title={ 'Awesome Vegetarian Recipes' } tag={ 'Vegetarian' } />
     </div>
   )

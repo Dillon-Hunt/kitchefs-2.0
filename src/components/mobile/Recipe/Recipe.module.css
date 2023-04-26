@@ -6,10 +6,10 @@
 
     position: absolute;
 
-    background-color: var(--color-light-primary);
+    background-color: var(--color-neutral-900);
 }
 
-.Recipe__spacer {
+spacer {
     height: 20px;
 }
 
@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: var(--color-light-detail);
+    background-color: var(--color-neutral-700);
 }
 
 .Recipe__description * {
@@ -35,7 +35,7 @@
        
     font-style: italic;
 
-    color: var(--color-dark-tertiary);
+    color: var(--color-neutral-300);
 }
 
 .Recipe__user {
@@ -44,14 +44,14 @@
     text-decoration: none;
     cursor: pointer;
 
-    color: var(--color-highlight-primary);
+    color: var(--color-highlight-700);
 }
 
 .Recipe__section {
     font-size: 1.25rem;
     font-weight: 600;
 
-    color: var(--color-highlight-primary);
+    color: var(--color-highlight-700);
 }
 
 .Recipe__section__ingredients {
@@ -89,11 +89,11 @@
 .Recipe__instructions__item__number {
     font-weight: 600;
 
-    color: var(--color-highlight-secondary);
+    color: var(--color-highlight-600);
 }
 
 .Recipe__instructions__item__content {
     font-weight: 200;
 
-    color: var(--color-dark-secondary);
+    color: var(--color-neutral-500);
 }

@@ -36,13 +36,14 @@ function format_fraction(quantity: number) {
 
 function format_quantity(ingredient: ingredient, adjustment: number) {
 
-    if (ingredient.unit === 'g' || ingredient.unit === 'ml') {
+    if (ingredient.unit === 'g' || ingredient.unit === 'ml' || ingredient.unit === '') {
         if (ingredient.quantity * adjustment > 100) {
             return <>{ Math.round(ingredient.quantity * adjustment / 5) * 5 }</>
         } else {
             return <>{ Math.round(ingredient.quantity * adjustment) }</>
         }
     }
+
     let quantity = {
         number: 0,
         numerator: 0,

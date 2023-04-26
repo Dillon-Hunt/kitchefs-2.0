@@ -18,12 +18,12 @@
 
 .Welcome__greeting__title {
     font-size: 2rem;
-    color: var(--color-highlight-primary);
+    color: var(--color-highlight-700);
 }
 
 .Welcome__greeting__subtitle {
     font-size: 1rem;
-    color: var(--color-dark-detail);
+    color: var(--color-neutral-400);
 }
 
 .Welcome__profile {
@@ -31,5 +31,5 @@
     height: 45px;
     border-radius: 50%;
 
-    background-color: var(--color-highlight-primary);
+    background-color: var(--color-highlight-700);
 }

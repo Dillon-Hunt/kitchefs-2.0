@@ -10,6 +10,7 @@ import DesktopNotFound from './routes/desktop/NotFound'
 
 import MobileHome from './routes/mobile/Home'
 import MobileSearch from './routes/mobile/Search'
+import MobileSubmitRecipe from './routes/mobile/SubmitRecipe'
 import MobileRecipes from './routes/mobile/Recipes'
 import MobileNotFound from './routes/mobile/NotFound'
 
@@ -45,6 +46,7 @@ function App() {
               <Route path='/' element={<MobileLayout />}>
                 <Route index element={<MobileHome />} />
                 <Route path='search' element={<MobileSearch />} />
+                <Route path='submit' element={<MobileSubmitRecipe />} />
                 <Route path='recipes/:id' element={<MobileRecipes />} />
                 <Route path='*' element={<MobileNotFound />} />
               </Route>

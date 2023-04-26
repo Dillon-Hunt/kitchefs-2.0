@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-around;
 
-    background-color: var(--color-light-slight);
+    background-color: var(--color-neutral-800);
 }
 
 .Navigation__item a {
@@ -16,7 +16,7 @@
 
     text-decoration: none;
 
-    color: var(--color-dark-secondary);
+    color: var(--color-neutral-500);
 }
 
 .Navigation__item a svg {

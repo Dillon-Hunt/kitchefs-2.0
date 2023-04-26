@@ -8,7 +8,7 @@
     background-position: center;
     position: relative;
 
-    background-color: var(--color-light-slight);
+    background-color: var(--color-neutral-800);
 }
 
 .RecipeHero::before {
@@ -17,8 +17,6 @@
 
     top: 0;
     left: 0;
-    
-    border-radius: 5px;
 
     position: absolute;
     content: '';
@@ -53,7 +51,7 @@
 }
 
 .RecipeHero__back__icon {
-    color: var(--color-light-primary);
+    color: var(--color-neutral-900);
 }
 
 .RecipeHero__title {
@@ -64,7 +62,7 @@
 
     position: absolute;
 
-    color: var(--color-light-primary);
+    color: var(--color-neutral-900);
 }
 
 .RecipeHero__subtitle {
@@ -76,5 +74,5 @@
 
     position: absolute;
 
-    color: var(--color-light-secondary);
+    color: var(--color-neutral-600);
 }

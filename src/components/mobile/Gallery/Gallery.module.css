@@ -5,7 +5,7 @@
 .Gallery__title {
     font-size: 1.25rem;
 
-    color: var(--color-dark-primary);
+    color: var(--color-neutral-100);
 }
 
 .Gallery__carousel {
@@ -38,5 +38,5 @@
     flex-shrink: none;
     scroll-snap-align: start;
 
-    background-color: var(--color-light-slight);
+    background-color: var(--color-neutral-800);
 }

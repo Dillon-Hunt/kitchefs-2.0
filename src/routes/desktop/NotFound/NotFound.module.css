@@ -15,11 +15,11 @@
 .NotFound__Title {
     font-size: 6rem;
     font-weight: 700;
-    color: var(--color-dark-primary);
+    color: var(--color-neutral-100);
 }
 
 .NotFound__Subtitle {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--color-dark-secondary);
+    color: var(--color-neutral-500);
 }

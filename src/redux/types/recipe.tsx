@@ -5,12 +5,15 @@ export interface ingredient {
 }
 
 export interface recipe {
-    _id: string,
+    _id?: string,
     url: string,
     title: string,
     description: string,
     image: string,
-    tag: string,
+    tags: string[],
+    category: string,
+    cook_time: number,
+    prep_time: number,
     servings: number,
     ingredients: ingredient[],
     instructions: string[]

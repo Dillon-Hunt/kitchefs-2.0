@@ -1,27 +1,31 @@
 :root {
-    --color-light-primary: #FFFFFF;
-    --color-light-secondary: #EAEAEA;
-    --color-light-detail: #F2F2F2;
-    --color-light-slight: #F7F7F7;
+    --color-neutral-100: #232228; /* Title */
+    --color-neutral-200: #2b2a31; /* Subtitle */
+    --color-neutral-500: #3F3E44;
+    --color-neutral-300: #54535a;
+    --color-neutral-400: #717074;
+    --color-neutral-600: #EAEAEA; 
+    --color-neutral-700: #F2F2F2;
+    --color-neutral-800: #F7F7F7; /* Background Subtle */
+    --color-neutral-900: #FFFFFF; /* Background Primary */
 
-    --color-dark-primary: #232228;
-    --color-dark-secondary: #3F3E44;
-    --color-dark-tertiary: #54535a;
-    --color-dark-detail: #717074;
-    --color-dark-slight: #2b2a31;
-
-    --color-highlight-primary: #F56B6B;
-    --color-highlight-secondary: #E35C5C;
-    --color-highlight-detail: #F7AFAF;
-    --color-highlight-slight: #FFF2F2;
+    --color-highlight-100: #430707;
+    --color-highlight-200: #771414;
+    --color-highlight-300: #912121;
+    --color-highlight-400: #ae3232;
+    --color-highlight-500: #cc4545;
+    --color-highlight-600: #E35C5C; /* Highlight Secondary */
+    --color-highlight-700: #F56B6B; /* Highlight Primary */
+    --color-highlight-800: #F7AFAF;
+    --color-highlight-900: #FFF2F2;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', sans-serif;
-    background-color: var(--color-light-primary);
-    color: var(--color-dark-primary);
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-100);
 }
 
 * {

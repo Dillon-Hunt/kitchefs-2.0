@@ -9,8 +9,8 @@
     overflow: clip;
     
 
-    color: var(--color-dark-secondary);
-    background-color: var(--color-light-slight);
+    color: var(--color-neutral-500);
+    background-color: var(--color-neutral-800);
 }
 
 .Servings__button {
@@ -20,7 +20,7 @@
     border: none;
     background-color: transparent;
 
-    background-color: var(--color-light-detail);
+    background-color: var(--color-neutral-700);
 }
 
 .Servings__count {
